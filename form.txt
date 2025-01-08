@@ -1,0 +1,11 @@
+THRE R 11 CHIL TAGS INSIDE FORM PARENT TAG
+   ***input tag,lable,select,text area tag,button,field set,legend,data list ,output,option,opt group(option group)
+TYPES OF INPUT(22 types):
+      ***email,passwodr,text,number,radio,tell(telephone no),date,month,week,url,submit,reset,search,image,file,check  box,
+      color pad,date time local,range,button,file,hidden
+             *input-getting input from user
+             *label-giving name for input box
+             *text area- can give height nd width(we can give para)
+             *button -i.e submit button
+             *field sset-like a border for a form
+             *legend

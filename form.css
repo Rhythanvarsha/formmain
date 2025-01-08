@@ -1,0 +1,26 @@
+
+form label{
+    color:rgba(58, 9, 58, 0.779);
+    font-style:initial;
+    text-align:justify;
+}
+form ,input{
+    border-radius: 10%;
+  
+    text-align: justify;
+}
+button{
+    color:rgb(74, 17, 208);
+    font-size: large;
+    border-color: blue;
+    border-radius: 10px;
+}
+fieldset{
+    
+    width: 700px;
+   
+    background-color: #81bcf0;
+    border-color: blue;
+    border-width: 20px;
+
+}
