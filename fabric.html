@@ -3,129 +3,143 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body style="background-color:rgb(4, 4, 54);">
-    <form>
-        <center><h1><fieldset style="background-color:rgb(228, 159, 19);width:30px;border-radius :5px;border-radius: 10%;">FABRIC</fieldset></h1></center><br>
-        <center><fieldset style="border-radius: 4%; background-color: rgb(254, 253, 252); width: 50px;align-items: center;height: 450px;">
-        <pre><label><b> Name of the Cloth</b></label> <br>
-        <input type="text" placeholder="Enter the cloth name"><pre><label><b>Type of the Fabric</b></label></pre>        <input type="checkbox">cotton<br>
-        <input type="checkbox">silk<br>
-        <input type="checkbox">Synthetic <pre><label><b>   Choose Cloth Requied</b></label> <br>
-        <input type="radio" id="stiched">stiched
-        
-        <input type="radio" id="unstiched">unstiched<pre><B><label>         Enter the Size</label></B>    <select>  
-            <option>L</option>
-            <option>XL</option>
-            <option>XXL</option>
-            <option>M</option>
-            <option>SS</option>
-            <option>S</option>
-            </select></select>  </pre><pre><B><label>        Enter the Colour</label></B>  <input type="color"></pre><pre><B><label>Upload the fabric</B></label>
-        
-        <input type="file">
-</pre><button>Submit</button>
-<pre></pre>
-        </fieldset>
-    </form>
-    <div class="footer">
-        <p>
-            
-            
-            
-            
-           
-            <a href="" style="color: lightblue;">Facebook</a>, 
-            <a href="" style="color: lightblue;">Instagram</a>, 
-            <a href="" style="color: lightblue;">Twitter</a>
-            <p style="color: azure;"> 2025 Cadbury. All rights reserved. | Follow us on </p>
-        </p>
-    </div>
-</body>
-</html>
-
-
-<!-- <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Diary Milk Lucky Draw</title>
     <style>
         body {
             background-color: rgb(4, 4, 54);
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
+            color: aliceblue;
+            background-image: url('Cadbury - San Valentín.jpg');
+            background-size: cover;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            background-position: center;
+            padding: 50px;
         }
 
-        form {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
+        .form-container {
+            text-align: center;
         }
 
         fieldset {
-            border-radius: 4%;
-            background-color: rgb(254, 253, 252);
-            width: 400px;
+            background-image: url('beautiful violet.jpg');
+            border-radius: 10%;
             padding: 20px;
+            margin: 20px auto;
+            max-width: 400px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
         }
 
-        h1 fieldset {
-            width: auto;
-            border-radius: 10%;
-            background-color: rgb(228, 159, 19);
+        .footer {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .footer a {
+            color: rgb(252, 197, 243);
+            text-decoration: none;
+            margin: 0 5px;
+        }
+
+        button {
+            background-color: purple;
+            color: white;
             padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: darkviolet;
         }
     </style>
 </head>
 <body>
-    <form>
-        <h1>
-            <fieldset>FABRIC</fieldset>
-        </h1>
-        <fieldset>
-            <label><b>Name of the Cloth</b></label><br>
-            <input type="text" placeholder="Enter the cloth name"><br><br>
+    <div class="form-container">
+        <h1>Let's Look at the Lucky Draw</h1>
+        <form 
+            action="https://formspree.io/f/meoopyqo" 
+            method="POST" 
+            enctype="application/json"
+            onsubmit="return handleSubmit(event)"
+        >
+            <fieldset>
+                <legend>Diary Milk</legend>
+                <label><b>Name of the Flavour:</b></label><br>
+                <input type="text" name="flavour" placeholder="Enter the flavour name" required><br><br>
 
-            <label><b>Type of the Fabric</b></label><br>
-            <input type="checkbox"> Cotton<br>
-            <input type="checkbox"> Silk<br>
-            <input type="checkbox"> Synthetic<br><br>
+                <label><b>Type of the Items:</b></label><br>
+                <input type="checkbox" name="items" value="Milk Shake"> Milk Shake<br>
+                <input type="checkbox" name="items" value="Chocolate"> Chocolate<br>
+                <input type="checkbox" name="items" value="Ice Cream"> Ice Cream<br><br>
 
-            <label><b>Choose Cloth Required</b></label><br>
-            <input type="radio" id="stitched" name="cloth"> Stitched
-            <input type="radio" id="unstitched" name="cloth"> Unstitched<br><br>
+                <label><b>Enter the Price Range:</b></label><br>
+                <select name="price">
+                    <option>10-50</option>
+                    <option>50-100</option>
+                    <option>100-200</option>
+                    <option>200-500</option>
+                    <option>Above 1000</option>
+                </select><br><br>
 
-            <label><b>Enter the Size</b></label><br>
-            <select>
-                <option>L</option>
-                <option>XL</option>
-                <option>XXL</option>
-                <option>M</option>
-                <option>SS</option>
-                <option>S</option>
-            </select><br><br>
+                <label><b>Enter the Colour:</b></label><br>
+                <input type="color" name="color"><br><br>
 
-            <label><b>Enter the Colour</b></label><br>
-            <input type="color"><br><br>
+         <label><b>Upload a Photo:</b></label><br>
+                         <input type="file" name="photo" accept="image/*"><br><br>
 
-            <label><b>Upload the Fabric</b></label><br>
-            <input type="file"><br>
-        </fieldset>
-    </form>
-
-    
-    
-    <pre><div class="footer">
-        <p style="color: azure;">2025 Cadbury. All rights reserved. | Follow us on</p>
-        <a href="" style="color: lightblue;">Facebook</a>, 
-        <a href="" style="color: lightblue;">Instagram</a>, 
-        <a href="" style="color: lightblue;">Twitter</a></pre>
+                <button type="submit">Submit</button>
+            </fieldset>
+        </form>
     </div>
+
+    <div class="footer">
+        <p>2025 Cadbury. All rights reserved. | Follow us on:</p>
+        <a href="https://www.facebook.com/people/Diary-Milk/100057486458487/">Facebook</a>
+        <a href="https://www.instagram.com/cadburydairymilkin/">Instagram</a>
+        <a href="https://x.com/DairyMilk">Twitter</a>
+    </div>
+
+    <script>
+        function handleSubmit(event) {
+            event.preventDefault();
+            
+            const form = event.target;
+            const formData = new FormData(form);
+            const json = {};
+            
+            formData.forEach((value, key) => {
+                if (json[key]) {
+                    if (Array.isArray(json[key])) {
+                        json[key].push(value);
+                    } else {
+                        json[key] = [json[key], value];
+                    }
+                } else {
+                    json[key] = value;
+                }
+            });
+
+            fetch(form.action, {
+                method: form.method,
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(json)
+            })
+            .then(response => {
+                if (response.ok) {
+                    alert('Form submitted successfully!');
+                    form.reset();
+                } else {
+                    alert('Failed to submit the form. Please try again.');
+                }
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                alert('An error occurred while submitting the form.');
+            });
+        }
+    </script>
 </body>
-</html> -->
+</html>
