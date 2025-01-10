@@ -10,17 +10,17 @@ form ,input{
     text-align: justify;
 }
 button{
-    color:rgb(74, 17, 208);
+    color:rgb(158, 12, 126);
     font-size: large;
-    border-color: blue;
+    border-color: rgb(50, 4, 41);
     border-radius: 10px;
 }
 fieldset{
     
     width: 700px;
-   
-    background-color: #81bcf0;
-    border-color: blue;
+   background-image: url('div bg.jpg');
+    /* background-color: #e98cb9; */
+    border-color: rgb(162, 36, 68);
     border-width: 20px;
 
 }
